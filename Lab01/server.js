@@ -5,8 +5,9 @@ const hostName = "localhost";
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.statusCode = 200;
-  res.setHeader("Content-type", "text/html");
+  // res.statusCode = 200;
+  // res.setHeader("Content-type", "text/html");
+  res.writeHead(200, {'Content-Type': 'text/html'});
   res.end("<h1>Hello 123</h1>");
 });
 
